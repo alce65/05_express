@@ -6,6 +6,7 @@
     "type": "module",
     "scripts": {
         "start": "nodemon",
+        "calc": "cross-env DEBUG=calc:* PORT=3030 nodemon index.calc.js",
         "test": "jest --watchAll",
         "lint": "eslint"
     },
@@ -14,6 +15,7 @@
     "license": "ISC",
     "devDependencies": {
         "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+        "cross-env": "^7.0.3",
         "eslint": "^8.7.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.3.0",
