@@ -20,6 +20,8 @@ app.use((req, resp, next) => {
     next();
 });
 
+app.use(express.static('public'));
+
 app.get('/', (req, resp) => {
     resp.send('<h1>API de tareas</h1>');
 });
